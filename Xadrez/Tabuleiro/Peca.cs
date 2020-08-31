@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Tabuleiro;
 
 namespace Xadrez.Tabuleiro
 {
@@ -9,9 +10,9 @@ namespace Xadrez.Tabuleiro
         public Posicao posicao { get; set; }
         public Cor cor { get; protected set; }
         public int qtdadeMovimentos { get; protected set; }
-        public Tabuleiro tabuleiro { get; set; }
+        public TabuleiroXadrez tabuleiro { get; set; }
 
-        public Peca(Posicao posicao, Cor cor, Tabuleiro tabuleiro)
+        public Peca(Posicao posicao, Cor cor, TabuleiroXadrez tabuleiro)
         {
             this.posicao = posicao;
             this.cor = cor;
